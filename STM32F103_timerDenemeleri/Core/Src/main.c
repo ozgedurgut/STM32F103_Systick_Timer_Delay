@@ -28,6 +28,7 @@
 /* USER CODE BEGIN PTD */
 uint32_t currentTime = 0;
 uint32_t previousTime= 0;
+uint32_t delay=0;
 bool status = false;
 /* USER CODE END PTD */
 
@@ -56,7 +57,7 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void waitMinute(int min){
-	int delay=0;
+	
 	delay=min*60*1000;
 	HAL_Delay(delay);
 }
